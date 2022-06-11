@@ -1,0 +1,120 @@
+.cmp-calendar
+    width: 100%
+    padding: 70px 25px
+    background-color: rgba(#E6FCAC, 0.6)
+    position: relative
+    z-index: 2
+    margin: auto
+    &__title
+        position: relative
+        margin: 0
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 50px
+        text-align: center
+        color: rgba(91, 153, 76, 1)
+    &__interactive
+        position: relative
+        margin: auto
+        margin-top: 25px
+        max-width: 870px
+        padding: 50px 20px 30px 70px
+        background-color: #fff
+        box-shadow: 0px 5.66197px 12.7394px #CCEA9B
+        border-radius: 12px
+        & .cmp-calendar__wrap
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            width: 100%
+            flex-wrap: wrap
+            & .cmp-calendar__numbers
+                //width: 46%
+                max-width: 360px
+                width: 100%
+        & .cmp-calendar__buttons
+            margin-top: 35px
+            display: flex
+            justify-content: start
+            align-items: center
+            & .cmp-button
+                &:nth-child(n+2)
+                    margin-left: 35px
+                    
+    &__afterword 
+        margin: 0
+        margin: auto
+        margin-top: 45px
+        max-width: 960px
+        font-size: 20px
+        font-weight: 600
+        text-align: center
+        & button
+            color: #5b994c
+            font-size: 36px
+            line-height: 1.5em
+            font-weight: 600
+            text-decoration: underline
+        & ~ .cmp-button
+            margin: auto
+            margin-top: 20px
+    &__panel
+        max-width: 320px
+        padding-left: 10px
+        & .message
+            margin: 0
+            text-transform: uppercase
+            color: rgba(91, 153, 76, 1)
+            font-family: 'Roboto', sans-serif
+        &-interactive
+            margin-top: 20px
+            & .cmp-calendar__panel-item
+                display: flex
+                align-items: center
+                & .smile
+                    cursor: pointer
+                    max-width: 48px
+                    max-height: 48px
+                    opacity: 0.5
+                    transition: 0.6s all
+                    &:hover
+                        opacity: 1
+                & .mood
+                    color: rgba(130, 130, 130, 1)
+                    font-size: 18px
+                    margin-left: 30px
+                    transition: 0.6s all
+                &:nth-child(n+2)
+                    margin-top: 12px
+                &_active
+                    & .smile
+                        opacity: 1
+                    & .mood
+                        color: #000
+                        font-size: 20px
+            & .cmp-calendar__panel-button
+                display: none
+                margin-top: 25px
+                & .cmp-button
+                    max-width: 250px
+                    width: 100%
+
+@media ( max-width: 1024px )
+    .cmp-calendar__title
+        font-size: 45px
+
+@media ( max-width: 768px )
+    .cmp-calendar__title
+        font-size: 36px
+    
+@media ( max-width: 576px )
+    .cmp-calendar__title
+        font-size: 32px
+
+@media ( max-width: 480px )
+    .cmp-calendar__title
+        font-size: 28px
+
+@media ( max-width: 420px )
+    .cmp-calendar__title
+        font-size: 22px

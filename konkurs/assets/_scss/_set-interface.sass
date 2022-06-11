@@ -1,0 +1,67 @@
+*
+    box-sizing: border-box
+    scrollbar-color: #FFB157 #ffffff
+    ::-webkit-scrollbar
+        width: 7px
+        background-color: #ffffff
+    ::-webkit-scrollbar-thumb 
+        background-color:  #FFB157
+        border-radius: 10px
+        width: 7px
+
+body.body
+    position: relative
+
+//Основные классы со свойтсвами для внешнего поведения блоков
+.container
+    max-width: 1500px
+    //padding-left: 25px
+    padding-left: 95px
+    padding-right: 25px
+    margin: auto
+
+@media ( max-width: 1300px )
+    .container
+        padding-left: 25px
+        
+//Стили для отдельных блоков
+.link
+    color: inherit
+    text-decoration: none
+    transition: 0.6s all
+
+.ul
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+.button
+    display: inline-block
+    background: none
+    outline:  none
+    border:  none
+    cursor: pointer
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    padding: 0
+
+.input
+    &:focus
+        outline: none
+
+.textarea
+    &:focus
+        outline: none
+
+
+//Стили отображения для разных размеров
+.mobile
+    display: none
+
+.desctop
+    display: block
+
+@media ( max-width: 768px )
+    .desctop
+        display: none
+    

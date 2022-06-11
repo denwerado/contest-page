@@ -1,0 +1,167 @@
+section.calendar
+    position: relative
+    padding: 50px 0  0 0
+    & .cmp-calendar
+        max-width: 1450px
+        width: 100%
+        & .calendar__note
+            position: absolute
+            top: 0
+            left: 0
+            transform: translateY(-20%) translateX(-30%)
+        & .encircle
+            &:nth-child(1)
+                position: absolute
+                top: 35px
+                right: 30%
+                width: 140px
+                height: 140px
+    & .calendar__encircles
+        & .encircle
+            position: absolute
+            &:nth-child(1)
+                top: 45px
+                left: 0
+                transform: translateX(-50%)
+                width: 358px
+                height: 359px
+                z-index: 1
+            &:nth-child(2)
+                top: 156px
+                left: 0
+                transform: translateX(-34%)
+                width: 728px
+            &:nth-child(3)
+                right: 0
+                bottom: 0
+            &:nth-child(4)
+                right: 1.8%
+                bottom: 0
+                transform: translateY(33%)
+
+@media ( max-width: 1750px )
+    section.calendar
+        & .cmp-calendar
+            width: 80%
+
+@media ( max-width: 1650px )
+    section.calendar
+        & .cmp-calendar
+            width: 85%
+            & .calendar__note
+                transform: translateY(-40%) translateX(-20%)
+
+@media ( max-width: 1550px )
+    section.calendar
+        & .cmp-calendar
+            & .calendar__note
+                width: 33%
+                transform: translateY(-40%) translateX(-15%)
+
+@media ( max-width: 1500px )
+    section.calendar
+        & .cmp-calendar
+            width: 90%
+            & .cmp-calendar__interactive
+                max-width: 800px
+
+@media ( max-width: 1350px )
+    section.calendar
+        & .cmp-calendar
+            & .calendar__note
+                display: none
+            & .cmp-calendar__interactive
+                max-width: 870px
+            & .cmp-calendar__afterword
+                max-width: 880px
+
+@media ( max-width: 1160px )
+    section.calendar
+        & .cmp-calendar
+            & .cmp-calendar__afterword
+                max-width: 750px
+
+@media ( max-width: 1024px )
+    section.calendar
+        & .calendar__encircles
+            display: none
+
+@media ( max-width: 930px )
+    section.calendar
+        & .cmp-calendar
+            & .cmp-calendar__interactive
+                padding: 50px 20px 30px 20px
+
+@media ( max-width: 860px )
+    section.calendar
+        & .cmp-calendar
+            padding: 55px 25px
+            & .cmp-calendar__interactive
+                & .cmp-calendar__wrap
+                    flex-direction: column-reverse
+                    & .cmp-calendar__panel
+                        padding: 0
+                        margin: auto
+                        text-align: center
+                        margin-bottom: 10px
+                        & .cmp-calendar__panel-popup
+                            position: fixed
+                            display: none
+                            align-items: center
+                            justify-content: center
+                            left: 0
+                            top: 0
+                            width: 100vw
+                            height: 100vh
+                            max-width: none
+                            background-color: rgba(#000, 0.5)
+                            & .cmp-calendar__panel-interactive
+                                width: 95%
+                                padding: 55px 15px 55px 45px 
+                                background-color: #fff
+                                border-radius: 8px
+                                box-shadow: 0px 4px 9px 0px rgba(224, 236, 193, 1)
+                                & .cmp-calendar__panel-button
+                                    display: block
+
+                        & .cmp-calendar__panel-item
+                            & .smile
+                                opacity: 1
+                            &_active
+                                & .mood
+                                    color: rgba(130, 130, 130, 1)
+                                    font-size: 18px
+
+                    & .cmp-calendar__numbers
+                        margin: auto
+                & .cmp-calendar__buttons
+                    margin-top: 20px
+                    justify-content: center
+                    & .cmp-button
+                        width: 65%
+                        &:nth-child(n+2)
+                            display: none
+
+@media ( max-width: 768px )
+    section.calendar
+        & .cmp-calendar
+            width: 100%
+            padding: 55px 15px
+            & .cmp-calendar__afterword
+                font-size: 18px
+                & button 
+                    font-size: 32px
+
+@media ( max-width: 576px )
+    section.calendar
+        & .cmp-calendar
+            & .cmp-calendar__afterword
+                & button 
+                    font-size: 28px
+
+@media ( max-width: 480px )
+    section.calendar
+        & .cmp-calendar
+            & .cmp-calendar__afterword
+                & button 
+                    font-size: 24px

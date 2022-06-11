@@ -1,0 +1,106 @@
+section.terms
+    position: relative
+    padding: 20px 0 30px 0
+    color: #353535
+    & .terms__encircles
+        & .encircle
+            position: absolute
+            &:nth-child(1)
+                top: 0
+                left: 24.69%
+                //width: 15.5%
+                max-width: 300px
+                transform: translateY(-40%)
+            &:nth-child(2)
+                top: 0
+                right: 20%
+                max-width: 740px
+                //width:  38.5%
+                transform: translateY(5%)
+    & .terms__block
+        position: relative
+        margin: auto
+        padding: 50px
+        max-width: 1300px
+        background: rgba(243, 255, 210, 0.7)
+        box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.11)
+        border-radius: 12px
+        & .terms__title
+            font-size: 36px
+            text-align: center
+            margin: 0
+        & .terms__list
+            margin: auto
+            margin-top: 30px
+            max-width: 600px
+            & .item
+                display: flex
+                align-items: center
+                margin-top: 10px
+                & .number
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin-right: 25px
+                    width: 42px
+                    height: 42px
+                    min-width: 42px
+                    min-height: 42px
+                    background-color: #F68400
+                    border-radius: 50%
+                    & span
+                        color: #fff
+                        font-size: 20px
+                        font-weight: 600
+                & .text
+                    font-size: 20px
+                    font-weight: 600
+                    & button
+                        font-weight: 600
+                        text-decoration: underline
+
+@media ( max-width: 1024px )
+    section.terms
+        & .terms__encircles
+            & .encircle
+                &:nth-child(1)
+                    left: 7%
+                    width: 32%
+                &:nth-child(2)
+                    width: 65%
+                    right: 6%
+        & .terms__block
+            & .terms__title
+                font-size: 32px
+
+@media ( max-width: 768px )
+    section.terms
+        & .terms__encircles
+            & .encircle
+                &:nth-child(1)
+                    left: auto
+                    right: 14%
+        & .terms__block
+            padding: 40px
+            & .terms__title
+                font-size: 30px
+            & .terms__list 
+                & .item 
+                    & .text
+                        font-size: 18px
+                    & .number
+                        margin-right: 20px
+
+@media ( max-width: 576px )
+    section.terms
+        & .terms__block
+            padding: 25px
+            & .terms__title
+                font-size: 28px
+
+@media ( max-width: 480px )
+    section.terms
+        & .terms__block
+            padding: 15px
+            & .terms__title
+                font-size: 26px

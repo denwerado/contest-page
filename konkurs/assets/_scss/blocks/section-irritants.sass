@@ -1,0 +1,316 @@
+section.irritants
+    position: relative
+    padding: 55px 0 0 0
+    & .irritants__block
+        & .irritants__preview
+            position: relative
+            padding-left: 60px
+            width: 59%
+            & .indication
+                position: absolute
+                top: 70px
+                left: 0
+                display: flex
+                align-items: flex-end
+                & svg
+                    width: 32px
+                    height: 135px
+                & .text
+                    display: block
+                    margin-left: 33px 
+                    font-size:  30px
+                    line-height: 1.3em
+                    font-weight: 700
+            & .irritants__background
+                width: 100%
+    & .irritants__preview
+        & .cmp-encircle
+            position: absolute
+            &:nth-child(1)
+                top: 105px
+                right: 26.5%
+                z-index: 2
+                & img
+                    width: 350px
+                    height: 350px
+                & .cmp-encircle__text
+                    width: 210px
+            &:nth-child(2)
+                top: 55px
+                right: 9.7%
+                z-index: 1
+                & svg
+                    width: 428px
+                    height: 428px
+                & .cmp-encircle__text
+                    width: 272px
+                    padding-left: 60px
+            &:nth-child(3)
+                bottom: 60px
+                right: 14.2%
+                & img
+                    width: 506px
+                    height: 506px
+                & .cmp-encircle__text
+                    width: 292px
+
+@media ( max-width: 1750px )
+    section.irritants
+        & .irritants__preview
+            & .cmp-encircle
+                &:nth-child(2)
+                    right: 5.7%
+                &:nth-child(3)
+                    right: 11.2%
+
+@media ( max-width: 1500px )
+    section.irritants
+        & .irritants__block
+            & .irritants__preview
+                & .indication
+                    & .text
+                        font-size: 28px
+        & .irritants__preview
+            & .cmp-encircle
+                &:nth-child(1)
+                    right: 24.5%
+                &:nth-child(2)
+                    right: 2.7%
+                &:nth-child(3)
+                    right: 8.2%
+                    //bottom: 140px
+
+@media ( max-width: 1400px )
+    section.irritants
+        & .irritants__preview
+            & .cmp-encircle
+                & .cmp-encircle__text 
+                    & .text__orange
+                        font-size: 32px
+                &:nth-child(1)
+                    right: 22.5%
+                    & img
+                        width: 320px
+                        height: 320px
+                &:nth-child(2)
+                    right: 1.7%
+                    & .cmp-encircle__text
+                        width: 340px
+                        padding-left: 100px
+                    & svg
+                        width: 390px
+                        height: 390px
+                &:nth-child(3)
+                    right: 5.2%
+                    bottom: 60px
+                    & img
+                        width: 470px
+                        height: 470px
+
+@media ( max-width: 1300px )
+    section.irritants
+        & .irritants__block
+            & .irritants__preview
+                & .indication
+                    & .text
+                        font-size: 24px
+                        margin-left: 25px
+        & .irritants__preview
+            & .cmp-encircle
+                & .cmp-encircle__text 
+                    font-size: 18px
+                    & .text__orange
+                        font-size: 28px
+                &:nth-child(1)
+                    //right: 22.5%
+                    & img
+                        width: 300px
+                        height: 300px
+                    & .cmp-encircle__text
+                        width: 190px
+                &:nth-child(2)
+                    & svg
+                        width: 370px
+                        height: 370px
+                    & .cmp-encircle__text
+                        width: 320px
+                        padding-left: 100px
+                &:nth-child(3)
+                    bottom: 30px
+                    & img
+                        width: 450px
+                        height: 450px
+                    & .cmp-encircle__text
+                        width: 250px
+
+@media ( max-width: 1200px )
+    section.irritants
+        & .irritants__preview
+            & .cmp-encircle
+                &:nth-child(1)
+                    & img
+                        width: 270px
+                        height: 270px
+                    & .cmp-encircle__text
+                        width: 170px
+                &:nth-child(2)
+                    & svg
+                        width: 340px
+                        height: 340px
+                    & .cmp-encircle__text
+                        width: 300px
+                        padding-left: 90px
+                &:nth-child(3)
+                    & img
+                        width: 420px
+                        height: 420px
+                    & .cmp-encircle__text
+                        width: 200px
+
+@media ( max-width: 1140px )
+    section.irritants
+        & .irritants__preview
+            //position: relative
+            & .cmp-encircle
+                &:nth-child(1)
+                    right: 3.5%
+                &:nth-child(2)
+                    top: 40%
+                    right: 12.7%
+                    & .cmp-encircle__text
+                        padding: 0
+                        max-width: 280px
+                &:nth-child(3)
+                    position: relative
+                    left: 6%
+                    right: auto
+                    bottom: auto
+
+
+@media ( max-width: 1024px )
+    section.irritants
+        & .irritants__block
+            & .irritants__preview
+                min-height: auto
+                margin-top: 20px
+                width: auto
+                & .irritants__background
+                    display: block
+                    width: 75%
+                    margin: auto
+        & .irritants__preview
+            overflow: hidden
+            position: relative
+            min-height: 680px
+            & .cmp-encircle
+                & .cmp-encircle__text 
+                    font-size: 20px
+                &:nth-child(1)
+                    right: auto
+                    top: 0
+                    left: 0
+                    transform: translateX(-14%)
+                    & img
+                        width: 350px
+                        height: 350px
+                    & .cmp-encircle__text
+                        width: 210px
+                &:nth-child(2)
+                    right: 0
+                    top: 30px
+                    transform: translateX(18%)
+                    & svg
+                        width: 428px
+                        height: 428px
+                    & .cmp-encircle__text
+                        width: 272px
+                &:nth-child(3)
+                    position: absolute
+                    right: auto
+                    left: 50%
+                    bottom: 0
+                    transform: translateX(-60%)
+                    & img
+                        width: 506px
+                        height: 506px
+                    & .cmp-encircle__text
+                        width: 292px
+
+@media ( max-width: 768px )
+    section.irritants
+        padding: 25px 0 0 0
+        & .irritants__block
+            & .irritants__title
+                text-align: center
+            & .irritants__preview
+                min-height: auto
+                padding: 0
+                & .irritants__background
+                    width: 85%
+                & .indication
+                    position: static
+                    & svg 
+                        width: 24px
+                        height: 102px
+                    & .text
+                        font-size: 22px
+        & .irritants__preview
+            min-height: 800px
+
+
+@media ( max-width: 576px )
+    section.irritants
+        & .irritants__block
+            & .irritants__preview
+                min-height: auto
+                & .irritants__background
+                    width: 100%
+                & .indication
+                    & svg 
+                        width: 18px
+                        height: 80px
+                    & .text
+                        font-size: 18px
+        & .irritants__preview
+            min-height: 570px
+            & .cmp-encircle
+                & .cmp-encircle__text 
+                    font-size: 16px
+                    & .text__orange
+                        font-size: 18px
+                &:nth-child(1)
+                    top: 0px
+                    & img
+                        width: 220px
+                        height: 220px
+                    & .cmp-encircle__text
+                        width: 170px
+                        transform: translateX(-40%) translateY(-50%)
+                &:nth-child(2)
+                    & svg
+                        width: 285px
+                        height: 285px
+                    & .cmp-encircle__text
+                        width: 150px
+                &:nth-child(3)
+                    & img
+                        width: 350px
+                        height: 350px
+                    & .cmp-encircle__text
+                        width: 210px
+                        transform: translateX(-42%) translateY(-50%)
+
+        
+@media ( max-width: 420px )
+    section.irritants
+        & .irritants__block
+            & .irritants__preview
+                min-height: auto
+        & .irritants__preview
+            min-height: 600px
+            & .cmp-encircle
+                &:nth-child(2)
+                    top: 70px
+                &:nth-child(3)
+                    left: 0
+                    transform: translateX(-16%)

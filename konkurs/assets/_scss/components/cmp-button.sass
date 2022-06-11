@@ -1,0 +1,110 @@
+.cmp-button
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 55px
+    cursor: pointer
+    &_green
+        padding: 16px 25px 
+        color: #fff
+        font-weight: 500
+        background-color: #5B994C
+        border: 1px solid #5B994C
+        transition: 0.6s all
+        &:hover
+            background-color: #ffffff
+            color: #5B994C !important
+        &-reverse
+            padding: 11px 19px
+            color: #5B994C
+            font-weight: 500
+            background-color: #fff
+            border: 6px solid #5B994C
+            transition: 0.6s all
+            &:hover
+                background-color: #5B994C
+                color: #fff 
+    &_orange
+        height: 50px
+        font-weight: 500
+        max-width: 210px
+        min-width: 210px
+        background-color: #F68400
+        border: 1px solid #F68400
+        color: #fff
+        transition: 0.6s all
+        &:hover
+            background-color: #fff
+            color: #F68400 !important
+        &-reverse
+            padding: 11px 19px
+            color: #F2994A
+            font-weight: 500
+            background-color: #fff
+            border: 6px solid #F2994A
+            transition: 0.6s all
+            &:hover
+                background-color: #F2994A
+                color: #ffffff !important
+    //Кнопка с тестом
+    &__test
+        position: relative
+        width: 450px
+        background-color: rgba(200, 225, 131, 0.55)
+        border-radius: 50%
+        & .text
+            position: absolute
+            bottom: 17%
+            left: 0
+            width: 100%
+            font-weight: 700
+            font-size: 20px
+            color: rgba(91, 153, 76, 1)
+            text-align: center
+        & .ellipse
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 70%
+            background-color: rgba(200, 225, 131, 0.55)
+            border-radius: 50%
+            transform: translateX(-50%) translateY(-50%)
+            &::before
+                content: ""
+                display: block
+                padding-top: 100%
+            & .ellipse
+                width: 73%
+                & .button
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 70%
+                    border: 20px solid #FFEE40
+                    border-radius: 50%
+                    background-color: #fff
+                    transform: translateX(-50%) translateY(-50%)
+                    color: #5B994C
+                    text-transform: uppercase
+                    font-size: 26px
+                    font-weight: 700
+                    &::before
+                        content: ""
+                        display: block
+                        padding-top: 100%
+        &::before
+            content: ""
+            display: block
+            padding-top: 100%
+
+    //Персональтный аккаунт
+    &__authentication
+        & .svg
+            max-width: 40px
+            max-height: 40px
+            margin-right: 10px
+        & .text
+            display: block

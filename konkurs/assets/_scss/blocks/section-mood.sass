@@ -1,0 +1,507 @@
+section.mood
+    padding: 60px 0 170px 0
+    & .mood__block
+        & .mood__title
+            text-align: center
+            text-transform: uppercase
+            padding: 0 25px
+        & .mood__preview
+            position: relative
+            &:nth-child(2)
+                margin-top: 20px
+                & .mood__background
+                    position: relative
+                    z-index: 3
+                    width: 52%
+                    max-width: 1020px
+                    display: block
+                & .mood__preview-text
+                    position: absolute
+                    top: 56px
+                    left: 35%
+                    margin: 0
+                    font-weight: 700
+                    font-size: 24px
+                    color: rgba(91, 153, 76, 1)
+                    max-width: 420px
+                    z-index: 3
+                & .other__encircle
+                    position: absolute
+                    top: 9.2%
+                    right: 19.8%
+                    max-width: 55px
+                    max-height: 55px
+                & .cmp-encircle
+                    position: absolute
+                    &:nth-child(3)
+                        top: -20px
+                        right: 25.7%
+                        z-index: 2
+                        & img
+                            width: 350px
+                            height: 350px
+                        & .cmp-encircle__text
+                            text-transform: uppercase
+                            width: 220px
+                    &:nth-child(4)
+                        bottom: 9.4%
+                        right: 26.45%
+                        z-index: 1
+                        & img
+                            width: 540px
+                            height: 540px
+                    &:nth-child(5)
+                        bottom: 18.8%
+                        right: 9%
+                        & svg
+                            width: 532px
+                            height: 532px
+                        & .cmp-encircle__text
+                            width: 280px
+                            transform: translateX(-26%) translateY(-50%)
+            &:nth-child(3)
+                margin-top: 55px
+                & .description
+                    margin: 0
+                    max-width: 440px
+                    font-size: 20px
+                    &:nth-child(1) 
+                        padding-top: 50px
+                    &:nth-child(n+2)   
+                        margin-top: 50px
+                    & .text__orange
+                        font-size: 36px
+                    & .text_dargreen
+                        font-size: 36px
+                & .mood__background
+                    position: absolute
+                    right: 39%
+                    top: 0
+                    transform: translateY(-26%)
+                & .cmp-button__test
+                    position: absolute
+                    width: 43%
+                    top: 0
+                    right: 14.68%
+                    max-width: 830px
+                    & .text 
+                        font-size: 32px
+                    & .ellipse 
+                        & .ellipse 
+                            & .button
+                                border: 30px solid #ffee40
+                                font-size: 36px
+                                color: rgba(246, 132, 0, 1)
+
+@media ( max-width: 1870px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .other__encircle
+                        right: 12.8%
+                    & .cmp-encircle
+                        &:nth-child(3)
+                            right: 20.7%
+                        &:nth-child(4)
+                            right: 21%
+                        &:nth-child(5)
+                            right: 2%
+                &:nth-child(3)
+                    & .mood__background
+                        right: 35%
+                    & .cmp-button__test
+                        right: 11%
+
+@media ( max-width: 1800px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        & .cmp-encircle__text
+                            & .text_dargreen
+                                font-size: 32px
+                        &:nth-child(3)
+                            & img
+                                width: 310px
+                                height: 310px
+                        &:nth-child(4)
+                            & img
+                                width: 490px
+                                height: 490px
+                        &:nth-child(5)
+                            & svg
+                                width: 480px
+                                height: 480px
+
+@media ( max-width: 1670px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(5)
+                            & .cmp-encircle__text
+                                width: 250px
+                                transform: translateX(-17%) translateY(-50%)
+
+@media ( max-width: 1600px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(3)
+                            & img 
+                                width: 270px
+                                height: 270px
+                            & .cmp-encircle__text
+                                width: 190px
+                        &:nth-child(4)
+                            & img 
+                                width: 460px
+                                height: 460px
+                        &:nth-child(5)
+                            & svg
+                                width: 440px
+                                height: 440px
+                            & .cmp-encircle__text
+                                width: 240px
+                                transform: translateX(-20%) translateY(-50%)
+
+@media ( max-width: 1520px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        & .cmp-encircle__text
+                            & .text_dargreen
+                                font-size: 28px
+                        &:nth-child(3)
+                            & img 
+                                width: 240px
+                                height: 240px
+                            & .cmp-encircle__text
+                                width: 170px
+                        &:nth-child(4)
+                            & img 
+                                width: 430px
+                                height: 430px
+                        &:nth-child(5)
+                            & svg
+                                width: 410px
+                                height: 410px
+                            & .cmp-encircle__text
+                                width: 240px
+                                transform: translateX(-22%) translateY(-50%)
+
+@media ( max-width: 1450px )
+    section.mood
+        padding: 60px 0 70px 0
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .other__encircle
+                        right: 28%
+                        top: 22%
+                    & .cmp-encircle
+                        &:nth-child(3)
+                            right: 8.7%
+                        &:nth-child(4)
+                            right: 18%
+                            bottom: 22%
+                        &:nth-child(5)
+                            position: relative
+                            right: auto
+                            bottom: auto
+                            left: 2%
+                            & .cmp-encircle__text
+                                width: 330px
+                                transform: translateX(-50%) translateY(-50%)
+                &:nth-child(3)
+                    & .mood__background
+                        width: 300px
+                        right: 32%
+                        transform: translateY(-40%)
+                    & .cmp-button__test
+                        right: 7%
+
+@media ( max-width: 1300px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(3)
+                    & .mood__background
+                        right: 34%
+
+@media ( max-width: 1200px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(3)
+                            right: 4%
+                        &:nth-child(4)
+                            right: 12%
+                &:nth-child(3)
+                    & .mood__background
+                        width: 270px
+                        right: 29%
+                    & .cmp-button__test
+                        & .text
+                            font-size: 28px
+                        & .ellipse 
+                            & .ellipse 
+                                & .button
+                                    border: 25px solid #ffee40
+                                    font-size: 32px
+                    & .description
+                        &:nth-child(1)
+                            padding: 0
+                        &:nth-child(n+2)
+                            margin-top: 35px
+                        & .text_dargreen
+                            font-size: 32px
+                        & .text__orange
+                            font-size: 32px
+
+@media ( max-width: 1100px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(4)
+                            right: 10%
+                &:nth-child(3)
+                    & .mood__background
+                        width: 270px
+                        right: 28%
+                    & .cmp-button__test
+                        right: 4%
+
+@media ( max-width: 1024px )
+    section.mood
+        padding: 40px 0 70px 0
+        & .mood__block
+                & .mood__preview
+                    &:nth-child(2)
+                        overflow: hidden
+                        & .mood__background
+                            width: 75%
+                        & .mood__preview-text
+                            position: static
+                            text-align: center
+                            margin: auto
+                & .mood__preview
+                    &:nth-child(2)
+                        & .mood__background
+                            display: block
+                            margin: auto
+                        & .cmp-encircle
+                            //display: b
+                            &:nth-child(3)
+                                display: block
+                                position: relative
+                                right: auto
+                                top: auto
+                                & img
+                                    display: block
+                                    margin: auto
+                            &:nth-child(4)
+                                position: relative
+                                right: auto
+                                bottom: auto
+                            &:nth-child(5)
+                                position: absolute
+                                left: auto
+                                bottom: 11% 
+                                right: 2%
+                                & .cmp-encircle__text
+                                    width: 250px
+                                    transform: translateX(-38%) translateY(-50%)
+                    &:nth-child(3)
+                        & .description
+                            max-width: none
+                        &  .cmp-button__test
+                            margin: auto
+                            margin-top: 115px
+                            position: relative
+                            right: auto
+                            top: auto
+                            width: 60%
+                            //margin: auto
+                        & .mood__background
+                            transform: scaleX(-1) translateY(5%)
+                            top: auto
+                            bottom: 0
+                            right: 10%
+                            width: 22%
+
+@media ( max-width: 850px )
+    section.mood
+        & .mood__block 
+            & .mood__preview
+                &:nth-child(2) 
+                    & .cmp-encircle
+                        &:nth-child(5)
+                            right: 0
+                            transform: translateX(5%)
+
+
+@media ( max-width: 768px )
+    section.mood
+        & .mood__block 
+            & .mood__preview
+                &:nth-child(2)
+                    overflow:  hidden
+                    & .mood__background
+                        width: 85%
+                    & .cmp-encircle
+                        &:nth-child(3)
+                            transform: translateX(-10%)
+                &:nth-child(3)
+                    & .description
+                        font-size: 18px
+                        & .text__orange
+                            font-size: 28px
+                        & .text_dargreen
+                            font-size: 28px
+                    &  .cmp-button__test
+                        width: 92%
+                    & .mood__background
+                        width: 30%
+                        transform: scaleX(-1) translateY(-4%)
+
+@media ( max-width: 720px )
+    section.mood
+        & .mood__block 
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(4)
+                            transform: translateX(-10%)
+
+@media ( max-width: 670px )
+    section.mood
+        & .mood__block 
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(4)
+                            transform: translateX(-20%)
+
+@media ( max-width: 630px )
+    section.mood
+        & .mood__block 
+            & .mood__preview
+                &:nth-child(2)
+                    & .cmp-encircle
+                        &:nth-child(3)
+                            transform: translateX(-25%)
+                        &:nth-child(5)
+                            transform: translateX(10%) translateY(-30%)
+
+@media ( max-width: 576px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(2)
+                    & .mood__preview-text
+                        font-size: 18px
+                        max-width: 300px
+                    & .mood__background
+                        width: 100%
+                    & .cmp-encircle
+                        & .cmp-encircle__text
+                            font-size: 16px
+                            & .text_dargreen
+                                font-size: 24px
+                        &:nth-child(3)
+                            transform: none
+                            & img
+                                width: 215px
+                                height: 215px
+                                margin: 0
+                                margin-left: 14px
+                            & .cmp-encircle__text
+                                width: 145px
+                                transform: translateY(-50%)
+                                left: 55px
+                        &:nth-child(4)
+                            margin-top: 160px
+                            transform: translateX(-15%)
+                            & img
+                                width: 330px
+                                height: 330px
+                            & .cmp-encircle__text
+                                width: 205px
+                                transform: translateX(-45%) translateY(-50%)
+                        &:nth-child(5)
+                            transform: translateX(4%) translateY(-76%)
+                            right: 0
+                            bottom: 0
+                            z-index: 1
+                            & svg
+                                width: 305px
+                                height: 305px
+                            & .cmp-encircle__text
+                                width: 240px
+                                transform: translateX(-45%) translateY(-50%)
+                &:nth-child(3)
+                    margin-top: 20px
+                    & .description
+                        font-size: 16px
+                        & .text__orange
+                            font-size: 24px
+                        & .text_dargreen
+                            font-size: 24px
+                        &:nth-child(n+2)
+                            margin-top: 20px
+                    & .cmp-button__test
+                        & .ellipse 
+                            & .ellipse 
+                                & .button
+                                    font-size: 28px
+                        & .text
+                            font-size: 24px
+                    & .mood__background
+                        transform: scaleX(-1) translateY(-8%)
+                        right: 4%
+
+@media ( max-width: 420px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(3)
+                    & .cmp-button__test
+                        & .ellipse 
+                            & .ellipse 
+                                & .button
+                                    border: 18px solid #ffee40
+                                    font-size: 22px
+                        & .text
+                            font-size: 18px
+                    & .mood__background
+                        width: 35%
+                        transform: scaleX(-1)
+
+@media ( max-width: 380px )
+    section.mood
+        & .mood__block
+            & .mood__preview
+                &:nth-child(3)
+                    & .cmp-button__test
+                        & .ellipse 
+                            & .ellipse 
+                                & .button
+                                    border: 18px solid #ffee40
+                                    font-size: 18px
+                        & .text
+                            font-size: 16px
+                    & .mood__background
+                        width: 40%
+                        transform: scaleX(-1) translateY(10%)

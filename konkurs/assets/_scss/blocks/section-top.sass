@@ -1,0 +1,615 @@
+section.top
+    position: relative
+    padding: 105px 0 145px 0
+    & .top__block
+        position: relative
+        max-width: 500px 
+        z-index: 2
+        & .top__title
+            margin: 0
+            padding: 0
+            font-size: 36px
+            //line-height: 140%
+            & .top__title_big
+                font-size: 64px
+            & span
+                display: inline-block
+                &:nth-child(n+2)
+                    margin-top: 10px
+        & .top__subtitle
+            margin: 0
+            margin-top: 25px
+            font-size: 28px
+
+        & .top__info
+            margin-top: 40px
+            max-width: 480px
+            /*& .top__name
+                margin: 0
+                //margin-bottom: 135px
+                font-size: 32px
+                & .signature
+                    position: relative
+                    & svg
+                        transform: translateX(22%) translateY(-30%)
+                        width: 89%
+                    & span
+                        position: absolute
+                        font-size: 18px
+                        bottom: 25%
+                        right: 1%
+            & .call
+                margin: 0
+                text-align: center
+                font-size: 28px
+                font-weight: 600
+                & .call_big
+                    font-size: 36px
+                    text-decoration: underline
+
+            & .buttons
+                margin-top: 40px
+                //margin-bottom: 40px
+                & .cmp-button
+                    margin: auto
+                    max-width: 245px
+                    width: 100%
+                    font-size: 18px
+                    text-align: center
+                & svg.arrow_down
+                    display: block
+                    margin: auto
+                    margin-top: 26px
+                    margin-bottom: 24px
+                    max-width: 37px
+                    max-height: 19px
+
+
+                /*& .cmp-button_orange
+                    font-family: 'Roboto'
+                    font-weight: 500
+                    margin: auto
+                /*& .socials
+                    display: flex
+                    align-items: center
+                    margin-left: 30px
+                    & .item
+                        & a svg
+                            max-width: 44px
+                            max-height: 44px
+                        &:nth-child(n+2)
+                            margin-left: 25px
+            /*& .description
+                & .text_dargreen
+                    font-size: 32px
+                    font-weight: 700
+            /*& .description.text_dargreen
+                font-weight: 500
+                margin-top: 15px
+                & a
+                    color: #5b994c
+                    font-weight: 600
+                    font-size: 32px
+
+    //Элементы справа
+    & .top__preview
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        width: 63%
+        overflow: hidden
+        /*& .hashtags
+            position: absolute
+            right: 24%
+            top: 17.6%
+            font-weight: 400
+            font-size: 45px
+            z-index: 2
+            & p
+                margin: 0
+
+        & .background
+            position: absolute
+            top: 0
+            right: 0
+            background-color: #DCF68F
+            height: 100%
+            width: 100%
+            max-height: 1470px
+            max-width: 1470px
+            /*& .cmp-button__test
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%) translateX(9%)
+                z-index: 1
+            & svg
+                &:nth-child(1)
+                    position: absolute
+                    right: 0
+                    top: 50%
+                    transform: translateY(-50%) translateX(12%)
+                    width: 682px  
+                    height: 682px  
+                &:nth-child(2)
+                    position: absolute
+                    right: 2%
+                    top: 87px
+                    width: 302px
+                    height: 302px
+                    //transform: translateX(31.45%)
+                &:nth-child(3)
+                    position: absolute
+                    right: 6%
+                    bottom: 0
+                    width: 862px
+                    height: 862px
+                    transform: translateY(22%)
+        & .overlap
+            position: absolute
+            top: 0
+            right: 0
+            height: 134%
+            width: 121%
+            max-width: 1470px
+            background-color: #fff
+            transform: translateX(-26%) translateY(-19.25%)
+            border-radius: 50%
+            overflow: hidden
+            z-index: 1
+            & .top__woman
+                position: absolute
+                bottom: 5.89%
+                right: 8%
+                max-width: 790px
+                width: 54%
+        & .cmp-packaging
+            position: absolute
+            z-index: 2
+            bottom: 60px
+            left: 21%
+            & .top__slogan
+                position: absolute
+                bottom: calc( 100% + 15px )
+                left: 15px
+                margin: 0
+                font-size: 20px
+                width: 420px
+                & .text__bold
+                    font-size: 32px
+
+@media ( max-width: 1700px )
+    section.top
+        & .top__preview
+            width: 64%
+
+@media ( max-width: 1500px )
+    section.top
+        & .top__preview
+            width: 68%
+            & .overlap
+                & .top__woman
+                    width: 57%
+                    right: 0%
+            /*& .hashtags
+                right: 23%
+                font-size: 42px
+
+@media ( max-width: 1400px )
+    section.top
+        & .top__block 
+            /*& .top__info 
+                & .name 
+                    & .text__orange
+                        font-size: 49px
+        /*& .top__preview
+            width: 60%
+
+@media ( max-width: 1300px )
+    section.top
+        padding: 100px 0 105px 0
+        & .top__block 
+            /*& .top__info 
+                max-width: 450px
+        & .top__preview
+            width: 65%
+            & .cmp-packaging
+                bottom: 40px
+                & .top__slogan
+                    font-size: 18px
+                & .text__bold
+                    font-size: 28px
+                    width: 350px
+
+
+@media ( max-width: 1200px )
+    section.top
+        & .top__preview
+            /*& .hashtags
+                right: 11%
+                font-size: 36px
+            & .overlap
+                transform: translateX(-16%) translateY(-19.25%)
+                & .top__woman
+                    width: 63%
+            & .background 
+                /*& .cmp-button__test
+                    width: 340px
+                    & .ellipse 
+                        & .ellipse
+                            & .button
+                                border: 15px solid #ffee40
+                                font-size: 22px
+                    & .text
+                        font-size: 18px
+                & svg
+                    &:nth-child(1)
+                        width: 540px
+                        height: 540px
+                    &:nth-child(2)
+                        width: 240px
+                        height: 240px
+            & .cmp-packaging
+                width: 300px
+
+
+@media ( max-width: 1024px )
+    section.top
+        //padding: 100px 0 105px 0
+        & .top__block
+            & .top__title
+                font-size: 32px
+                & .top__title_big
+                    font-size: 52px
+            & .top__subtitle
+                margin-top: 15px
+                font-size: 24px
+            & .top__info
+                max-width: 400px
+                //margin-top: 370px
+                /*& .top__name
+                    margin-bottom: 20px
+                    & .signature
+                        & svg
+                            transform: none
+                            width: 89%
+                        & span
+                            right: 20%
+                            bottom: 0
+
+        & .top__preview
+            width: 100%
+            /*& .hashtags
+                top: 17%
+                right: 3%
+
+            & .overlap
+                width: 173%
+                transform: translateX(1%) translateY(-28%)
+                &::before
+                    content: ""
+                    padding-top: 100%
+                    display: block
+                & .top__woman
+                    width: 43%
+                    bottom: 0
+                    transform: translateX(8%) translateY(-15%)
+            & .background 
+                /*& .cmp-button__test
+                    right: auto
+                    left: 0
+                    transform: translateX(-15%) translateY(-122%)
+                    z-index: 2
+                & svg
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        display: none
+            & .cmp-packaging
+                left: auto
+                right: 6.8%
+                bottom: 55px
+                & .top__slogan
+                    left: auto
+                    right: 0
+                    width: auto
+                    text-align: right
+
+@media ( max-width: 930px )
+    section.top
+        & .top__block
+            max-width: 400px
+        & .top__preview
+            & .overlap
+                & .top__woman
+                    width: 40%
+
+@media ( max-width: 800px )
+    section.top
+        & .top__block
+            & .top__subtitle
+                max-width: 300px
+            & .top__info
+                max-width: 350px
+                & .call
+                    font-size: 26px
+                    & .call_big
+                        font-size: 32px
+                & .buttons
+                    margin-top: 25px
+                    & .cmp-button 
+                        font-size: 16px 
+                        max-width: 220px
+        & .top__preview
+            & .overlap
+                & .top__woman
+                    transform: translateX(10%) translateY(-20%)
+            & .cmp-packaging
+                right: 3%
+
+
+@media ( max-width: 768px )
+    section.top
+        padding: 85px 0 105px 0 
+        & .top__block
+            max-width: 350px
+            & .top__title
+                font-size: 28px
+                & .top__title_big
+                    font-size: 45px
+            & .top__subtitle
+                display: none
+            & .top__info
+                //margin-top: 270px
+                //position: relative
+                //width: 96%
+                //max-width: none
+                /*& .top__name
+                    font-size: 28px
+                    & .signature
+                        & svg
+                            width: 50%
+                        & span
+                            right: auto
+                            left: 30%
+                & .call
+                    text-align: left
+                    font-size: 24px
+                    & .call_big
+                        font-size: 28px
+                & .buttons
+                    display: inline-block
+                    //position: absolute
+                    //margin: 0
+                    //top: 35%
+                    //right: 0
+                    & .cmp-button
+                        margin: 0
+                    /*& .socials
+                        display: none
+                /*& .description
+                    font-size: 18px
+                    max-width: 60%
+                /*& .description.text_dargreen
+                    & a
+                        font-size: 24px
+        & .top__preview
+            /*& .hashtags
+                top: 11%
+                font-size: 32px
+            & .cmp-packaging
+                right: 6.8%
+                width: 250px
+                bottom: 30px
+                & .top__slogan
+                    display: none
+            /*& .background 
+                & .cmp-button__test
+                    width: 250px
+                    transform: translateX(-15%) translateY(-102%)
+                    & .text
+                        font-size: 16px
+                    & .ellipse 
+                        & .ellipse
+                            & .button
+                                border: 12px solid #ffee40
+                                font-size: 18px
+            & .overlap 
+                & .top__woman
+                    //width: 40%
+                    width: 500px
+                    transform: translateX(6%) translateY(-20%)
+
+@media ( max-width: 700px )      
+    section.top
+        & .top__preview
+            /*& .hashtags
+                top: 25%
+                right: auto
+                left: 34%
+                font-size: 28px
+            /*& .background 
+                & .cmp-button__test
+                    transform: translateX(-15%) translateY(-108%)
+            & .overlap 
+                & .top__woman
+                    width: 40%
+
+@media ( max-width: 630px )
+    section.top
+        /*& .top__block
+            & .top__info
+                & .description
+                   max-width: 67%
+        & .top__preview
+            /*& .background 
+                & .cmp-button__test
+                    transform: translateX(-15%) translateY(-108%)
+            /*& .hashtags
+                font-size: 24px
+                left: auto
+                right: 2%
+                top: 20%
+            & .cmp-packaging
+                max-width: 200px
+                & span
+                    margin: 0
+                    position: absolute
+                    bottom: 0
+                    right: 0
+                    font-size: 8px
+                    transform: rotate(-90deg) translateX(45%) translateY(85px)
+
+@media ( max-width: 576px )
+    section.top
+        & .top__block
+            max-width: 300px
+            & .top__title
+                font-size: 24px
+                & .top__title_big
+                    font-size: 36px
+            & .top__info
+                //margin-top: 220px
+                margin-top: 25px
+                /*& .top__name
+                    font-size: 24px
+                    margin-bottom: 0
+                    & .signature
+                        transform: translateY(-15%)
+                        bottom: 5%
+                        & span
+                            bottom: 5%
+                /*& .description
+                   max-width: 86%
+                & .call
+                    font-size: 18px
+                    & .call_big
+                        font-size: 24px
+                & .buttons
+                    //margin-top: 15px
+                    & .cmp-button
+                        font-size: 14px
+                        min-width: 0
+                        max-width: 180px
+                        padding: 12px 17px
+                    & svg.arrow_down
+                        max-width: 20px
+                        max-height: 10px
+                        margin-top: 12px
+                        margin-bottom: 12px
+                    /*& .cmp-button_orange
+                        min-width: 110px
+                        font-size: 11px
+
+        & .top__preview
+            /*& .background 
+                & .cmp-button__test
+                    width: 200px
+                    transform: translateX(-15%) translateY(-110%)
+                    & .text
+                        display: none
+                    & .ellipse 
+                        & .ellipse
+                            & .button
+                                border: 10px solid #ffee40
+                                font-size: 16px
+            /*& .overlap 
+                & .top__woman
+                    width: 420px
+
+            & .cmp-packaging
+                max-width: 150px
+                & span
+                    font-size: 6px
+                    transform: rotate(-90deg) translateX(45%) translateY(65px)
+
+
+@media ( max-width: 480px )
+    section.top
+        padding: 40px 0 110px 0
+        & .top__block
+            & .top__title
+                font-size: 18px
+                & .top__title_big
+                    font-size: 32px
+                & span
+                    margin-top: 5px
+            & .top__info
+                margin-top: 15px
+                & .buttons
+                    margin-top: 15px
+                    & .cmp-button
+                        max-width: 150px
+                        font-size: 13px
+        & .top__preview
+            /*& .hashtags
+                font-size: 22px
+            /*& .background 
+                & .cmp-button__test
+                    transform: translateX(-15%) translateY(-114%)
+            & .overlap 
+                transform: translateX(1%) translateY(-30%)
+                & .top__woman
+                    width: 38%
+                    transform: translateX(5%) translateY(-25%)
+
+/*@media ( max-width: 450px )
+    section.top
+        & .top__preview
+            & .background 
+                & .cmp-button__test
+                    transform: translateX(-15%) translateY(-128%)
+
+/*@media ( max-width: 420px ) 
+    section.top
+        & .top__block
+            & .top__info
+                //margin-top: 180px
+                & .top__name 
+                    font-size: 22px
+                    & .signature 
+                        & span
+                            font-size: 16px
+                    
+                & .description
+                    font-size: 13px
+                & .buttons
+                    top: 35%
+
+        & .top__preview
+            & .background 
+                & .cmp-button__test
+                    width: 170px
+                    transform: translateX(-15%) translateY(-120%)
+                    & .ellipse 
+                        & .ellipse
+                            & .button
+                                border: 10px solid #ffee40
+                                font-size: 14px
+            & .overlap 
+                & .top__woman
+                    width: 330px
+
+        
+/*@media ( max-width: 390px )
+    section.top
+        & .top__block 
+            & .top__info 
+                & .top__name 
+                    & .signature 
+                        & span
+                            font-size: 14px
+                            left: 22%
+
+        & .top__preview
+            & .overlap 
+                & .top__woman
+                    width: 320px
+
+/*@media ( max-width: 380px )
+    section.top
+        & .top__preview
+            & .background
+                & .cmp-button__test
+                    transform: translateX(-15%) translateY(-120%)

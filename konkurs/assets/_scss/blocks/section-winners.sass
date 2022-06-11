@@ -1,0 +1,211 @@
+section.winners
+   padding: 160px 0 140px 0
+   background: url('../images/backgrounds/winners_tenoten.png')
+   background-size: cover
+   background-repeat: no-repeat
+   & .winners__block
+      & .winners__title
+         font-size: 36px
+         text-align: center
+         margin: 0
+      & .places
+         margin-top: 125px
+         padding: 0 25px 100px 25px
+         background: rgba(255, 255, 255, 0.7)
+         box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.11)
+         border-radius: 12px
+         & .winners__list
+            max-width: 700px
+            margin: auto
+            position: relative
+            z-index: 1
+            & .item 
+               position: relative
+               padding-top: 70px
+               & .place
+                  position: absolute
+                  top: 0
+                  left: 50%
+                  margin: 0
+                  padding: 8px 35px 12px 35px
+                  background: #F68400
+                  border-radius: 55px
+                  color: #fff
+                  font-size: 32px
+                  font-weight: 600
+                  transform: translateY(-50%) translateX(-50%)
+               & .name
+                  margin: 0
+                  text-align: center
+                  font-weight: 600
+                  font-size: 32px
+                  color: #353535
+               & .prize
+                  margin: 0
+                  margin-top: 16px
+                  text-align: center
+                  & .text__semibold
+                     font-size: 20px
+                  & .text_orange
+                     font-size: 24px
+               & .card
+                  position: relative
+                  margin: auto
+                  margin-top: 28px
+                  padding: 100px 36px 30px 36px
+                  max-width: 372px
+                  height: 372px
+                  background: rgba(243, 255, 210, 0.7)
+                  box-shadow: 0px 11px 11px rgba(0, 0, 0, 0.11)
+                  border-radius: 12px
+                  & .circle
+                     position: relative
+                     margin: auto
+                     width: 68%
+                     border-radius: 50%
+                     background-color: #fff
+                     &::before
+                           content: ''
+                           display: block
+                           padding-top: 100%
+                     & .sector
+                           position: absolute
+                           width: 130%
+                           height: 130%
+                           top: 50%
+                           left: 50%
+                           transform: translateX(-50%) translateY(-50%)
+                     & .image
+                           position: absolute
+               & .description
+                  margin: auto
+                  margin-top: 28px
+                  max-width: 580px
+                  font-size: 20px
+                  text-align: center
+               & .afterword
+                  margin: auto
+                  margin-top: 20px
+                  font-size: 14px
+                  text-align: center
+               &:nth-child(1)
+                  & .card
+                     & .circle
+                           & .image
+                              width: 62.5%
+                              left: -5.8%
+                              top: -12%
+                              transform: rotate(-19deg)
+                           & .logo
+                              position: absolute
+                              top: 50%
+                              left: 62.5%
+                              width: 47.32%
+                              transform: translateY(-50%)
+               &:nth-child(2)
+                  & .card
+                     & .circle
+                           & .sector
+                              transform: translateX(-50%) translateY(-50%) rotate(230deg)
+                           & .image
+                              width: 125%
+                              bottom: 0
+                              left: 50%
+                              transform: translateX(-50%)
+               &:nth-child(3)
+                  & .card
+                     & .image
+                           width: 170%
+                           left: 50%
+                           top: 50%
+                           transform: translateX(-50%) translateY(-48%)
+               &:nth-child(n+2)
+                  margin-top: 190px
+         & .ps
+            margin: 0
+            margin-top: 100px
+            text-align: center
+            font-size: 36px
+
+
+@media ( max-width: 1024px )
+   section.winners
+      padding: 120px 0 100px 0
+      & .winners__block
+         & .winners__title
+            font-size: 32px
+         & .places
+            margin-top: 90px
+            padding: 0 25px 80px 25px
+            & .winners__list 
+               & .item
+                  padding-top: 50px
+                  & .place
+                     font-size: 28px
+                  & .description
+                     font-size: 18px
+                     margin-top: 20px
+                  &:nth-child(n+2)
+                     margin-top: 120px
+            & .ps
+               font-size: 32px
+               margin-top: 80px
+
+@media ( max-width: 768px )
+   section.winners
+      padding: 100px 0 80px 0
+      & .winners__block
+         & .winners__title
+            font-size: 30px
+         & .places
+            & .winners__list 
+               & .item
+                  & .place
+                     font-size: 24px
+                     padding: 8px 30px 8px 30px
+                  & .name
+                     font-size: 30px
+                  & .prize
+                     margin-top: 15px
+                     & .text__semibold
+                        font-size: 18px
+                     & .text_orange
+                        font-size: 20px
+                  & .card
+                     margin-top: 25px
+                  &:nth-child(n+2)
+                     margin-top: 100px
+            & .ps
+               font-size: 30px
+               margin-top: 60px
+
+@media ( max-width: 576px )
+   section.winners
+      padding: 80px 0 50px 0
+      & .winners__block
+         & .winners__title
+            font-size: 28px
+         & .places
+            margin-top: 60px
+            padding: 0 25px 50px 25px
+            & .winners__list 
+               & .item
+                  padding-top: 35px
+                  & .name
+                     font-size: 28px
+                  & .card
+                     max-width: 300px
+                     height: 300px
+                  &:nth-child(n+2)
+                     margin-top: 80px
+            & .ps
+               font-size: 28px
+               margin-top: 30px
+
+
+@media ( max-width: 480px )
+   section.winners
+      & .winners__block
+         & .places
+            & .ps
+               font-size: 24px

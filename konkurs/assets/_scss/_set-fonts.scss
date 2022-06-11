@@ -1,0 +1,96 @@
+//Montserrat & Roboto
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+//Inter
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+//Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+//Roboto Condensed
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+body.body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.section__title{
+    margin: 0;
+    font-size: 56px;
+    color: #5B994C;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section__description{
+    margin: 0;
+    font-size: 22px;
+}
+
+
+//Цвета
+.text_lightgreen{
+    color: #A3CF2D;
+}
+
+.text_dargreen{
+    color: #5B994C;
+}
+
+.text_orange{
+    color: #F68400;
+}
+
+
+//Ширина
+.text__semibold{
+    font-weight: 600;
+}
+
+.text__bold{
+    font-weight: 700;
+}
+
+
+//Прочее
+.text_uppercase{
+    text-transform: uppercase;
+}
+
+
+
+
+@media ( max-width: 1350px ){
+    .section__title{
+        font-size: 52px;
+    }
+}
+
+@media ( max-width: 1024px ){
+    .section__title{
+        font-size: 45px;
+    }
+}
+
+
+@media ( max-width: 768px ){
+    .section__title{
+        font-size: 36px;
+    }
+}
+
+@media ( max-width: 576px ){
+    .section__title{
+        font-size: 32px;
+    }
+}
+
+@media ( max-width: 480px ){
+     .section__title{
+         font-size: 28px;
+     }
+}
+
+@media ( max-width: 420px ){
+    .section__title{
+        font-size: 22px;
+    }
+}

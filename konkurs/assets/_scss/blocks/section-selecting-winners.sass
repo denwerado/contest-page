@@ -1,0 +1,73 @@
+section.selecting-winners
+    position: relative
+    padding: 30px 0 60px 0
+    & .selecting-winners__encircles
+        & .encircle
+            position: absolute
+            &:nth-child(1)
+                max-width: 400px
+                //width: 20.8%
+                bottom: 0
+                left: 14%
+                transform: translateY(16%)
+    & .selecting-winners__block
+        position: relative
+        max-width: 950px
+        margin: auto
+        & .selecting-winners__title
+            text-align: center
+            margin: 0
+            font-size: 36px
+        & .selecting-winners__description
+            margin: 0
+            margin-top: 35px
+            font-size: 18px
+            //font-weight: 600
+            & .text_orange
+                font-size: 24px
+                font-weight: 600
+            & .text_dargreen
+                font-size: 24px
+                font-weight: 600
+
+@media ( max-width: 1024px )
+    section.selecting-winners
+        padding: 30px 0 30px 0
+        & .selecting-winners__encircles
+            & .encircle
+                &:nth-child(1)
+                    left: 1%
+                    width: 40%
+        & .selecting-winners__block
+            & .selecting-winners__title
+                font-size: 32px
+            & .selecting-winners__description
+                margin-top: 25px
+                & .text_orange
+                    font-size: 22px
+                & .text_dargreen
+                    font-size: 22px
+
+@media ( max-width: 768px )
+    section.selecting-winners
+        & .selecting-winners__block
+            & .selecting-winners__title
+                font-size: 30px
+
+@media ( max-width: 576px )
+    section.selecting-winners
+        & .selecting-winners__block
+            & .selecting-winners__title
+                font-size: 28px
+            & .selecting-winners__description
+                margin-top: 20px
+                & .text_orange
+                    font-size: 20px
+                & .text_dargreen
+                    font-size: 20px
+            
+@media ( max-width: 480px )
+    section.selecting-winners
+        & .selecting-winners__block
+            & .selecting-winners__title
+                font-size: 26px

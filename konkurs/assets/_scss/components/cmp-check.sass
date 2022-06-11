@@ -1,0 +1,58 @@
+//Стили для чекбокса соглашения
+.cmp-check
+    display: flex
+    align-items: center
+    margin-top: 30px
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+    &__label
+        position: relative
+        display: flex
+        align-items: center
+        cursor: pointer
+        user-select: none
+        margin-right: 3px
+        & input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+            height: 0
+            width: 0
+            &:checked ~ .cmp-check__checkmark
+                background-color: #2A2623
+            &:checked ~ .cmp-check__checkmark:after
+                display: block
+    &__checkmark
+        position: relative
+        top: 0
+        left: 0
+        display: block
+        margin-right: 5px
+        height: 16px
+        width: 16px
+        background-color: #F5F5F5
+        border: 1px solid #EEEEEE
+        border-radius: 5px
+        &::after
+            content: ""
+            position: absolute
+            display: none
+            left: 4px
+            top: 2px
+            width: 4px
+            height: 6px
+            border: solid #fff
+            border-width: 0 2px 2px 0
+            -webkit-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            transform: rotate(45deg)
+        &:hover 
+            background-color: rgba(#EEEEEE, 0.7)
+    &__message
+        font-size: 14px
+        color: #666666
+        line-height: 120%
+    &__agreement
+        font-size: 14px
+        line-height: 120%
+        color: #089FE0

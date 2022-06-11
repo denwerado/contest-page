@@ -1,0 +1,68 @@
+.cmp-segencircle
+    position: relative
+    display:  inline-block
+    width: 32%
+    & svg
+        display: block
+        margin: auto
+        width: 100%
+        max-width: 300px
+        max-height: 300px
+        & circle
+            transform-origin: center
+            transform-box: fill-box
+            transform: rotate(-90deg)
+            stroke-linejoin: round
+            stroke-linecap: round
+            stroke-width: 44px
+            fill: none
+        & .cmp-segencircle__base
+            stroke: #dfe8ed
+        & .severity
+            stroke-dasharray: 0 1000
+            &:nth-child(2)  
+                stroke: #FF3334
+            &:nth-child(3) 
+                stroke: #F8931F
+            &:nth-child(4)
+                stroke: #F9D600
+            &:nth-child(5)
+                stroke: #9ED970
+            &:nth-child(6)
+                stroke: #92C63B
+    &__text
+        position: absolute
+        top: 50%
+        left: 50%
+        margin: 0
+        color: rgba(130, 130, 130, 1)
+        font-size: 28px
+        font-family: "Roboto", sans-serif
+        font-weight: 400
+        text-align: center
+        transform: translateX(-50%) translateY(-50%)
+
+@media ( max-width: 1024px )
+    .cmp-segencircle
+        &__text
+            font-size: 24px
+
+@media ( max-width: 768px )
+    .cmp-segencircle
+        &__text
+            font-size: 22px
+
+@media ( max-width: 576px)
+    .cmp-segencircle
+        width: 60%
+        margin: auto
+        &:nth-child(n+2)
+            margin-top: 25px
+    
+@media ( max-width: 480px)
+    .cmp-segencircle
+        width: 65%
+
+@media ( max-width: 380px)
+    .cmp-segencircle
+        width: 75%

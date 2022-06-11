@@ -1,0 +1,121 @@
+//Обертка родителя
+.ui-datepicker
+    padding: 0
+    width: 100%
+    //Верхнее "меню"
+    & .ui-datepicker-header
+        padding: 0
+
+    & .ui-state-hover
+        background: none
+        border: none
+
+    //Стрелки
+    & .ui-datepicker-prev 
+        & span
+            background-image: url('../images/_svg/arrow-prev.svg')
+            background-position: 0px 0px !important
+            height: 20px
+            width: 12px
+    & .ui-datepicker-next
+        & span
+            background-image: url('../images/_svg/arrow-next.svg')
+            background-position: 0px 0px !important
+            height: 20px
+            width: 12px
+    & .ui-datepicker-unselectable
+        opacity: 0.5
+
+    //Блок с числами
+    & table
+        margin-top: 25px
+        & thead
+            & tr
+                & th
+                    color: rgba(91, 153, 76, 1)
+                    text-transform: uppercase
+                    font-weight: 500
+                    font-size: 15px
+        & tbody
+            font-size: 20px
+            color: rgba(79, 79, 79, 1)
+            font-weight: 400
+            & tr
+                & td
+                    position: relative
+                    width: calc( 100% / 7 )
+                    //padding: 2px
+                    & .ui-state-default
+                        cursor: pointer
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        border: none
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: calc(100% - 2px)
+                        height: calc(100% - 2px)
+                        background: none
+                        border-radius: 50%
+                        transform: translateX(-50%) translateY(-50%)
+                        transition: 0.6s all
+                        &:hover
+                            background-color: #E3E3E3
+                    & .ui-state-active
+                        color: rgba(79, 79, 79, 1)
+                        background-color: #E3E3E3
+                    &::before
+                        content: ""
+                        display: block
+                        padding-top: 100%
+
+                //Настроение
+                & .ui-td-active_bad
+                    & .ui-state-default
+                        border: 6px solid #FF3334
+                & .ui-td-active_sad
+                    & .ui-state-default
+                        border: 6px solid #F8931F
+                & .ui-td-active_normal
+                    & .ui-state-default
+                        border: 6px solid #F9D600
+                & .ui-td-active_positive
+                    & .ui-state-default
+                        border: 6px solid #9ED970
+                & .ui-td-active_joyful
+                    & .ui-state-default
+                        border: 6px solid #92C63B
+//Виджет
+.ui-widget
+    font-family: 'Inter', sans-serif
+    &-content
+        border: none !important
+    &-header
+        border: none
+        background: none
+        color: rgba(253, 115, 6, 1)
+        font-size: 22px
+        font-weight: 600
+
+@media  (max-width: 480px  )
+    .ui-datepicker
+        & table
+            & tbody
+                & tr
+                    //Настроение
+                    & .ui-td-active_bad
+                        & .ui-state-default
+                            border: 4px solid #FF3334
+                    & .ui-td-active_sad
+                        & .ui-state-default
+                            border: 4px solid #F8931F
+                    & .ui-td-active_normal
+                        & .ui-state-default
+                            border: 4px solid #F9D600
+                    & .ui-td-active_positive
+                        & .ui-state-default
+                            border: 4px solid #9ED970
+                    & .ui-td-active_joyful
+                        & .ui-state-default
+                            border: 4px solid #92C63B

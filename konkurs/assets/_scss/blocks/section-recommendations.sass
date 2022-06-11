@@ -1,0 +1,95 @@
+section.recommendations
+    padding: 100px 0 30px 0
+    & .recommendations__block
+        display: flex
+        align-items: start
+        justify-content: space-between
+        & .recommendations__background
+            width: 56%
+            max-width: 810px
+            //transform: translateX(-15%)
+        & .recommendations__info
+            max-width: 615px
+            & .cmp-packaging
+                margin-top: 50px
+                width: 66%
+            & .description
+                margin-top: 35px
+                &:nth-child(2)
+                    font-size: 24px
+                    font-weight: 700
+                &:nth-child(4)
+                    & .text_dargreen
+                        font-size: 36px
+                        font-weight: 500
+
+@media ( max-width: 1200px )
+    section.recommendations
+        & .recommendations__block
+            & .recommendations__background
+                transform: translateY(10%)
+
+@media ( max-width: 1024px )
+    section.recommendations
+        padding: 0 0 30px 0
+        & .recommendations__block
+            display: block
+            & .recommendations__background
+                display: block
+                margin: auto
+                transform: none
+                width: 60%
+            & .recommendations__info
+                max-width: none
+                & .recommendations__title
+                    text-align: center
+                & .cmp-packaging
+                    display: block
+                    margin: auto
+                    margin-top: 30px
+                    width: 50%
+                    max-width: 450px
+
+@media ( max-width: 768px )
+    section.recommendations
+        & .recommendations__block
+            & .recommendations__background
+                width: 75%
+            & .recommendations__info
+                & .description
+                    font-size: 20px
+                    &:nth-child(2)
+                        font-size: 20px
+                        margin-top: 15px
+                    &:nth-child(4)
+                        & .text_dargreen
+                            font-size: 32px
+
+@media ( max-width: 576px )
+    section.recommendations
+        & .recommendations__block
+            & .recommendations__background
+                width: 100%
+            & .recommendations__info
+                & .description
+                    font-size: 18px
+                    &:nth-child(2)
+                        font-size: 18px
+                        margin-top: 15px
+                    &:nth-child(4)
+                        & .text_dargreen
+                            font-size: 24px
+                & .cmp-packaging
+                    width: 60%
+
+@media ( max-width: 420px )
+    section.recommendations
+        & .recommendations__block
+            & .recommendations__info
+                & .description
+                    font-size: 16px
+                    &:nth-child(4)
+                        & .text_dargreen
+                            font-size: 20px
+                & .cmp-packaging
+                    width: 82%

@@ -1,0 +1,224 @@
+.cmp-test
+    margin: 0
+    width: 100%
+    font-family: 'Roboto'
+    &__question
+        width: 100%
+        & .cmp-test__number
+            margin: 0
+            font-weight: 700
+            color: rgba(91, 153, 76, 1)
+            font-size: 33px
+        & .cmp-test__header
+            margin-top: 45px
+            display: flex
+            align-items: start
+            justify-content: space-between
+            width: 100%
+            & .cmp-test__title
+                font-weight: 700
+                font-size: 45px
+                color: rgba(91, 153, 76, 1)
+                max-width: 970px
+                padding-right: 10px
+            & .cmp-test__arrow
+                cursor: pointer
+                max-height: 52px
+                max-width: 26px
+                opacity: 0.7
+                transition: 0.6s all
+                &:hover
+                    opacity: 1
+            
+        & .cmp-test__message
+            display: inline-block
+            margin-top: 55px
+            font-weight: 700
+            color: rgba(91, 153, 76, 1)
+            font-size: 33px
+        & .cmp-test__variants
+            margin-top: 25px
+            & .item
+                & input
+                    display: none
+                    opacity: 0
+                    &:checked ~ label
+                        & .flag
+                            &::before
+                                background-color: #F78B10
+                                
+                & label
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    transition: 0.6s all
+                    border-top-right-radius: 46px
+                    border-bottom-right-radius: 46px
+                    &:hover
+                        background-color: rgba(#C8E183, 0.2)
+                    & .text
+                        color: #828282
+                        font-size: 28px
+                    & .flag
+                        position: relative
+                        width: 46px
+                        height: 46px 
+                        min-width: 46px
+                        min-height: 46px
+                        border-radius: 50%
+                        border: 8px solid #DCF68F
+                        &::before
+                            content: ""
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translateX(-50%) translateY(-50%)
+                            width: 18px
+                            height: 18px
+                            border-radius: 50%
+                            transition: 0.6s all
+                &:nth-child(n+2)
+                    margin-top: 15px
+
+    &__result
+        width: 100%
+        max-width: 768px
+        & .cmp-test__header
+            position: relative
+            & .cmp-test__title
+                margin: 0
+                font-weight: 700
+                font-size: 35px
+                color: rgba(91, 153, 76, 1)
+            & .smile
+                position: absolute
+                max-height: 64px
+                max-width: 64px
+                left: -27px
+                top: 50%
+                transform: translateX(-100%) translateY(-50%)
+        & .cmp-test__message
+            margin: 0
+            margin-top: 25px
+            font-size: 22px
+            font-weight: 400
+            color: #828282
+            & .cmp-test__paragraph
+                display: block
+                font-size: 28px
+                font-weight: 500
+                color: #B2D947
+        & .cmp-test__toggle-switch
+            display: block
+            margin-top: 5px
+            font-size: 22px
+            font-weight: 400px
+            text-decoration: underline
+            cursor: pointer
+            color: rgba(246, 132, 0, 1)
+
+        & .cmp-test__toggle
+            margin-top: 30px
+            display: none
+            & ol.ul
+                & li.item
+                    font-size: 22px
+                    font-weight: 400
+                    color: #828282
+                    &:nth-child(n+2)
+                        margin-top: 10px
+                    & .text__orange
+                        font-weight: 500
+                        font-size: 24px
+
+        &:nth-child(n+3)
+            margin-top: 70px
+
+@media ( max-width: 1550px )
+    .cmp-test
+        &__result
+            & .cmp-test__header
+                display: flex
+                align-items: center
+                & .smile
+                    position: static
+                    transform: none
+                    margin-right: 15px
+                    max-height: 55px
+                    max-width: 55px
+
+@media ( max-width: 1024px )
+    .cmp-test
+        &__question 
+            & .cmp-test__header 
+                & .cmp-test__title
+                    font-size: 36px
+            & .cmp-test__message
+                    font-size: 28px
+
+@media ( max-width: 900px )
+    .cmp-test
+        &__question 
+            & .cmp-test__header 
+                & .cmp-test__title
+                    font-size: 32px
+
+@media ( max-width: 768px )
+    .cmp-test
+        &__question 
+            & .cmp-test__number
+                font-size: 28px
+            & .cmp-test__header 
+                margin-top: 25px
+                & .cmp-test__title
+                    font-size: 28px
+            & .cmp-test__message
+                margin-top: 25px
+                font-size: 24px
+            & .cmp-test__variants
+                & .item
+                    & label
+                        & .text
+                            font-size: 24px
+                        & .flag
+                            width: 35px
+                            height: 35px
+                            min-width: 35px
+                            min-height: 35px
+                            border: 6px solid #dcf68f
+                            &::before
+                                width: 14px
+                                height: 14px
+        &__result
+            & .cmp-test__header
+                & .cmp-test__title
+                    font-size: 32px
+
+@media ( max-width: 576px )
+    .cmp-test
+        &__question 
+            & .cmp-test__number
+                font-size: 24px
+            & .cmp-test__header 
+                & .cmp-test__title
+                    font-size: 28px
+            & .cmp-test__message
+                font-size: 24px
+        &__result
+            & .cmp-test__header
+                & .cmp-test__title
+                    font-size: 28px
+
+@media ( max-width: 480px )
+    .cmp-test
+        &__question 
+            margin-top: 20px
+            & .cmp-test__number
+                font-size: 20px
+            & .cmp-test__header 
+                & .cmp-test__title
+                    font-size: 24px
+            & .cmp-test__message
+                margin-top: 20px
+                font-size: 20px
